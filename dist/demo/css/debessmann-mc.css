@@ -1,0 +1,468 @@
+/* debessmann:begin */
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot');
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'), local('Roboto'), local('Roboto-regular'), url('../fonts/Roboto-regular/Roboto-regular.woff2') format('woff2'), url('../fonts/Roboto-regular/Roboto-regular.woff') format('woff'), url('../fonts/Roboto-regular/Roboto-regular.ttf') format('truetype'), url('../fonts/Roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/Roboto-500/Roboto-500.eot');
+  src: url('../fonts/Roboto-500/Roboto-500.eot?#iefix') format('embedded-opentype'), local('Roboto Medium'), local('Roboto-500'), url('../fonts/Roboto-500/Roboto-500.woff2') format('woff2'), url('../fonts/Roboto-500/Roboto-500.woff') format('woff'), url('../fonts/Roboto-500/Roboto-500.ttf') format('truetype'), url('../fonts/Roboto-500/Roboto-500.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Roboto-700/Roboto-700.eot');
+  src: url('../fonts/Roboto-700/Roboto-700.eot?#iefix') format('embedded-opentype'), local('Roboto Bold'), local('Roboto-700'), url('../fonts/Roboto-700/Roboto-700.woff2') format('woff2'), url('../fonts/Roboto-700/Roboto-700.woff') format('woff'), url('../fonts/Roboto-700/Roboto-700.ttf') format('truetype'), url('../fonts/Roboto-700/Roboto-700.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/Roboto-italic/Roboto-italic.eot');
+  src: url('../fonts/Roboto-italic/Roboto-italic.eot?#iefix') format('embedded-opentype'), local('Roboto Italic'), local('Roboto-italic'), url('../fonts/Roboto-italic/Roboto-italic.woff2') format('woff2'), url('../fonts/Roboto-italic/Roboto-italic.woff') format('woff'), url('../fonts/Roboto-italic/Roboto-italic.ttf') format('truetype'), url('../fonts/Roboto-italic/Roboto-italic.svg#Roboto') format('svg');
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+label.control-label {
+  color: #607d8b;
+  font-weight: 400;
+}
+input.form-control,
+select.form-control {
+  color: #263238;
+  border-color: #cfd8dc;
+}
+input.form-control:focus,
+select.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #cfd8dc;
+}
+input.form-control::-webkit-input-placeholder,
+select.form-control::-webkit-input-placeholder {
+  color: #a8adaf !important;
+}
+input.form-control::-moz-placeholder,
+select.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #a8adaf !important;
+}
+input.form-control:-moz-placeholder,
+select.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #a8adaf !important;
+}
+input.form-control:-ms-input-placeholder,
+select.form-control:-ms-input-placeholder {
+  color: #a8adaf !important;
+}
+ul.deb-tabs {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #9fa8da;
+}
+ul.deb-tabs > li {
+  display: inline-block;
+  min-width: 82px;
+  height: 44px;
+  padding: 0 12px;
+  background-color: #5c6bc0;
+  color: white;
+  line-height: 44px;
+  text-align: center;
+  font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+ul.deb-tabs > li.active {
+  background-color: #fff;
+  color: #3f51b5;
+}
+ul.deb-tabs > li:not(.active):hover {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.deb-side-nav {
+  position: fixed;
+  width: 64px;
+  height: 100%;
+  background-color: #5c6bc0;
+}
+.deb-side-nav .deb-brand-icon {
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+}
+.deb-side-nav .deb-brand-icon .deb-component-logo {
+  content: url(../img/ico-monitoring-console.png);
+}
+.deb-side-nav .deb-items,
+.deb-side-nav .deb-bottom-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 64px;
+}
+.deb-side-nav .deb-items li,
+.deb-side-nav .deb-bottom-items li {
+  height: 48px;
+  color: #3f51b5;
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+.deb-side-nav .deb-items li.active,
+.deb-side-nav .deb-bottom-items li.active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+.deb-side-nav .deb-items li:hover,
+.deb-side-nav .deb-bottom-items li:hover {
+  color: #fff;
+}
+.deb-side-nav .deb-bottom-items {
+  position: absolute;
+  vertical-align: bottom;
+  bottom: 0;
+}
+.deb-cardfile {
+  margin-bottom: 0;
+}
+.deb-cardfile .panel {
+  border-radius: 0;
+  margin: 16px -8px;
+  border: none;
+  transition: margin 0.35s, box-shadow 0.35s;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(96, 125, 139, 0.6);
+  -moz-box-shadow: 0 4px 10px 0 rgba(96, 125, 139, 0.6);
+  box-shadow: 0 4px 10px 0 rgba(96, 125, 139, 0.6);
+}
+.deb-cardfile .panel:not(.collapsed) {
+  margin-top: 16px;
+}
+.deb-cardfile .panel:not(.collapsed) + .panel {
+  border: 0;
+}
+.deb-cardfile .panel:not(.collapsed) .panel-heading {
+  border-bottom: 1px solid #cfd8dc;
+}
+.deb-cardfile .panel.collapsed {
+  margin: 0;
+  border-top: 1px solid #cfd8dc;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(96, 125, 139, 0.2);
+  -moz-box-shadow: 0 2px 3px 0 rgba(96, 125, 139, 0.2);
+  box-shadow: 0 2px 3px 0 rgba(96, 125, 139, 0.2);
+}
+.deb-cardfile .panel:first-of-type {
+  margin-top: 0;
+  border: 0;
+}
+.deb-cardfile .panel:last-of-type {
+  margin-bottom: 0;
+}
+.deb-cardfile .panel .panel-heading,
+.deb-cardfile .panel .panel-footer {
+  height: 48px;
+  padding: 0 24px;
+  line-height: 48px;
+}
+.deb-cardfile .panel .panel-heading {
+  cursor: pointer;
+  background-color: #fff;
+}
+.deb-cardfile .panel .panel-heading .panel-title {
+  display: inline-block;
+  font-weight: 600;
+  color: #263238;
+}
+.deb-cardfile .panel .panel-heading .panel-subtitle {
+  margin-left: 12px;
+  display: inline-block;
+  color: #90a4ae;
+}
+.deb-cardfile .panel .toggleable-part {
+  display: none;
+}
+.deb-cardfile .panel .panel-body {
+  border: 0;
+  padding: 16px 24px;
+}
+.deb-cardfile .panel .panel-footer {
+  background-color: #f0f3f5;
+}
+.deb-link {
+  color: #3f51b5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.deb-link:hover {
+  text-decoration: none;
+}
+.deb-link.deb-link-alt {
+  color: #b0bec5;
+}
+.deb-btn {
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.deb-btn:active,
+.deb-btn.active {
+  outline: none;
+  box-shadow: none;
+}
+.deb-btn:active:focus,
+.deb-btn.active:focus {
+  outline: none;
+}
+.deb-btn:focus {
+  outline: none;
+}
+.deb-btn.deb-btn-primary {
+  background-color: #5c6bc0;
+  border-color: #5c6bc0;
+  color: #fff;
+}
+.deb-btn.deb-btn-primary:hover,
+.deb-btn.deb-btn-primary:active,
+.deb-btn.deb-btn-primary.active {
+  border-color: #3f51b5;
+  background-color: #3f51b5;
+  color: #fff;
+}
+.deb-btn.deb-btn-primary:focus {
+  color: #fff;
+}
+.deb-btn.deb-btn-primary.disabled,
+.deb-btn.deb-btn-primary[disabled] {
+  background-color: #9fa8da;
+  border-color: #9fa8da;
+}
+.deb-btn.deb-btn-primary-inv {
+  background-color: transparent;
+  border-color: #5c6bc0;
+  color: #3f51b5;
+}
+.deb-btn.deb-btn-primary-inv:hover,
+.deb-btn.deb-btn-primary-inv:active,
+.deb-btn.deb-btn-primary-inv.active {
+  border-color: #3f51b5;
+  background-color: #3f51b5;
+  color: #fff;
+}
+.deb-btn.deb-btn-primary-inv:hover:focus,
+.deb-btn.deb-btn-primary-inv:active:focus,
+.deb-btn.deb-btn-primary-inv.active:focus {
+  color: #fff;
+}
+.deb-btn.deb-btn-primary-inv:focus {
+  color: #3f51b5;
+}
+.deb-btn.deb-btn-primary-inv.disabled,
+.deb-btn.deb-btn-primary-inv[disabled] {
+  background-color: transparent;
+  border-color: #9fa8da;
+  color: #9fa8da;
+}
+.deb-btn.deb-btn-secondary {
+  background-color: #afbec5;
+  border-color: #afbec5;
+  color: #fff;
+}
+.deb-btn.deb-btn-secondary:hover,
+.deb-btn.deb-btn-secondary:active,
+.deb-btn.deb-btn-secondary.active {
+  border-color: #617d8b;
+  background-color: #617d8b;
+  color: #fff;
+}
+.deb-btn.deb-btn-secondary:hover:focus,
+.deb-btn.deb-btn-secondary:active:focus,
+.deb-btn.deb-btn-secondary.active:focus {
+  color: #fff;
+}
+.deb-btn.deb-btn-secondary:focus {
+  color: #617d8b;
+}
+.deb-btn.deb-btn-secondary.disabled:hover,
+.deb-btn.deb-btn-secondary[disabled]:hover {
+  background-color: #afbec5;
+  border-color: #afbec5;
+}
+.deb-btn.deb-btn-secondary-inv {
+  background-color: transparent;
+  border-color: #afbec5;
+  color: #617d8b;
+}
+.deb-btn.deb-btn-secondary-inv:hover,
+.deb-btn.deb-btn-secondary-inv:active,
+.deb-btn.deb-btn-secondary-inv.active {
+  border-color: #617d8b;
+  background-color: #617d8b;
+  color: #fff;
+}
+.deb-btn.deb-btn-secondary-inv:hover:focus,
+.deb-btn.deb-btn-secondary-inv:active:focus,
+.deb-btn.deb-btn-secondary-inv.active:focus {
+  color: #fff;
+}
+.deb-btn.deb-btn-secondary-inv:focus {
+  color: #617d8b;
+}
+.deb-btn.deb-btn-secondary-inv.disabled,
+.deb-btn.deb-btn-secondary-inv[disabled] {
+  background-color: transparent;
+  border-color: #cfd8dc;
+  color: #cfd8dc;
+}
+.deb-btn.deb-btn-pict {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0;
+}
+.deb-btn.deb-btn-pict > .fa,
+.deb-btn.deb-btn-pict > .glyphicon {
+  font-size: 16px;
+}
+.deb-btn.deb-btn-pict > .glyphicon {
+  top: 0;
+  line-height: 24px;
+}
+.deb-pagination .nav-controls,
+.deb-pagination .page-length-control {
+  display: inline-block;
+}
+.deb-pagination .nav-controls select.form-control,
+.deb-pagination .page-length-control select.form-control {
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  padding: 2px;
+  vertical-align: middle;
+}
+.deb-pagination .page-length-control {
+  float: right;
+}
+.deb-pagination .page-length-control select.form-control {
+  width: 56px;
+}
+.deb-popup {
+  display: inline-block;
+  width: 240px;
+  border-radius: 3px;
+  background: #052e42;
+  color: #cfd8dc;
+}
+.deb-popup .modal-header {
+  height: 40px;
+  padding: 0 13px 0 16px;
+  border: 0;
+  word-wrap: break-word;
+}
+.deb-popup .modal-header .modal-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 40px;
+  color: #cfd8dc;
+}
+.deb-popup .modal-header .close {
+  margin: 0;
+  line-height: 40px;
+  font-size: 24px;
+  color: #bcc8ce;
+  text-shadow: none;
+  opacity: .95;
+}
+.deb-popup .modal-header .close:hover {
+  color: #fff;
+}
+.deb-popup .modal-header .close:focus {
+  outline: none;
+}
+.deb-popup .modal-header .popup-icon {
+  margin-right: 8px;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.deb-popup.deb-popup-notification .popup-icon:before {
+  content: "\f05a";
+}
+.deb-popup.deb-popup-success .modal-title {
+  color: #8bc34a;
+}
+.deb-popup.deb-popup-success .popup-icon:before {
+  content: "\f00c";
+}
+.deb-popup.deb-popup-warning .modal-title {
+  color: #ff9800;
+}
+.deb-popup.deb-popup-warning .popup-icon:before {
+  content: "\f071";
+}
+.deb-popup .modal-body {
+  padding: 11px 16px;
+  border-top: 1px solid #093d57;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+.deb-login-panel {
+  width: 500px;
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(38, 50, 56, 0.6);
+  -moz-box-shadow: 0 4px 10px 0 rgba(38, 50, 56, 0.6);
+  box-shadow: 0 4px 10px 0 rgba(38, 50, 56, 0.6);
+}
+.deb-login-panel .panel-heading {
+  height: 64px;
+  padding: 16px;
+  border-radius: 0;
+  background-color: #3f51b5;
+  color: #fff;
+}
+.deb-login-panel .panel-heading .deb-component-logo {
+  display: inline-block;
+  width: 32px;
+  content: url(../img/ico-monitoring-console.png);
+}
+.deb-login-panel .panel-heading .panel-title {
+  display: inline-block;
+  line-height: 32px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+.deb-login-panel .panel-body {
+  padding: 24px 24px 27px;
+}
+.deb-login-panel form {
+  width: 265px;
+  margin: 0 auto;
+}
+.deb-login-panel form .form-group {
+  margin-bottom: 10px;
+}
+.deb-login-panel form .form-group:last-of-type {
+  margin-top: 24px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+.deb-login-panel form .deb-btn {
+  width: 128px;
+}
+.deb-login-panel .hint-wrapper {
+  text-align: center;
+}
+/* debessmann:end */
