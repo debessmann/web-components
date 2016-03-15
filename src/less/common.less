@@ -1,0 +1,33 @@
+
+label.control-label {
+  color: @col-form-label;
+  font-weight: 400;
+}
+
+input.form-control,
+select.form-control {
+  color: @col-form-control-content;
+  border-color: @col-form-control-border;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: @col-form-control-border;
+  }
+
+  &::-webkit-input-placeholder {
+    color: @col-form-control-placeholder !important;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: @col-form-control-placeholder !important;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: @col-form-control-placeholder !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: @col-form-control-placeholder !important;
+  }
+}

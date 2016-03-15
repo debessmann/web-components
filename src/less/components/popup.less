@@ -1,0 +1,73 @@
+
+.deb-popup {
+  //position: fixed;
+  //left: 8px;
+  //bottom: -150px;
+  //margin-top: 100px;
+
+  display: inline-block;
+  width: 240px;
+  border-radius: 3px;
+  background: @col-popup-background;
+  color: @col-popup-content;
+
+  .modal-header {
+    height: 40px;
+    padding: 0 13px 0 16px;
+    border: 0;
+    word-wrap: break-word;
+
+    .modal-title {
+      margin: 0;
+      font-size: 14px;
+      line-height: 40px;
+      color: @col-popup-content;
+    }
+    .close {
+      margin: 0;
+      line-height: 40px;
+      font-size: 24px;
+      color: @col-popup-close;
+      text-shadow: none;
+      opacity: .95;
+
+      &:hover {
+        color: #fff;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .popup-icon {
+      margin-right: 8px;
+      font: normal normal normal 14px/1 FontAwesome;
+    }
+  }
+  &.deb-popup-notification {
+    .popup-icon:before {
+      content: "\f05a";
+    }
+  }
+  &.deb-popup-success {
+    .modal-title {
+      color: @col-popup-success;
+    }
+    .popup-icon:before {
+      content: "\f00c";
+    }
+  }
+  &.deb-popup-warning {
+    .modal-title {
+      color: @col-popup-warning;
+    }
+    .popup-icon:before {
+      content: "\f071";
+    }
+  }
+  .modal-body {
+    padding: 11px 16px;
+    border-top: 1px solid @col-popup-line;
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+}

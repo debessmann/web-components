@@ -1,0 +1,134 @@
+
+.deb-btn {
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 700;
+
+  &:active,
+  &.active {
+    outline: none;
+    box-shadow: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  &.deb-btn-primary {
+    background-color: @col-btn-2;
+    border-color: @col-btn-2;
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &.active {
+      border-color: @col-btn-3;
+      background-color: @col-btn-3;
+      color: #fff;
+    }
+    &:focus {
+      color: #fff;
+    }
+    &.disabled,
+    &[disabled] {
+      background-color: @col-btn-1;
+      border-color: @col-btn-1;
+      //opacity: 0.5;
+    }
+  }
+  &.deb-btn-primary-inv {
+    background-color: transparent;
+    border-color: @col-btn-2;
+    color: @col-btn-3;
+
+    &:hover,
+    &:active,
+    &.active {
+      border-color: @col-btn-3;
+      background-color: @col-btn-3;
+      color: #fff;
+      &:focus {
+        color: #fff;
+      }
+    }
+    &:focus {
+      color: @col-btn-3;
+    }
+    &.disabled,
+    &[disabled] {
+      background-color: transparent;
+      border-color: @col-btn-1;
+      color: @col-btn-1;
+    }
+  }
+  &.deb-btn-secondary {
+    background-color: @col-btn-alt-2;
+    border-color: @col-btn-alt-2;
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &.active {
+      border-color: @col-btn-alt-3;
+      background-color: @col-btn-alt-3;
+      color: #fff;
+
+      &:focus {
+        color: #fff;
+      }
+    }
+    &:focus {
+      color: @col-btn-alt-3;
+    }
+    &.disabled:hover,
+    &[disabled]:hover {
+      background-color: @col-btn-alt-2;
+      border-color: @col-btn-alt-2;
+      //opacity: 0.5;
+    }
+  }
+  &.deb-btn-secondary-inv {
+
+    background-color: transparent;
+    border-color: @col-btn-alt-2;
+    color: @col-btn-alt-3;
+
+    &:hover,
+    &:active,
+    &.active {
+      border-color: @col-btn-alt-3;
+      background-color: @col-btn-alt-3;
+      color: #fff;
+
+      &:focus {
+        color: #fff;
+      }
+    }
+    &:focus {
+      color: @col-btn-alt-3;
+    }
+    &.disabled,
+    &[disabled] {
+      background-color: transparent;
+      border-color: @col-btn-alt-1;
+      color: @col-btn-alt-1;
+    }
+  }
+  &.deb-btn-pict {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+
+    > .fa,
+    > .glyphicon {
+      font-size: 16px;
+    }
+    > .glyphicon {
+      top: 0;
+      line-height: 24px;
+    }
+  }
+}

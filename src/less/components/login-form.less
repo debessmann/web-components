@@ -1,0 +1,55 @@
+
+.deb-login-panel {
+  width: 500px;
+
+  border-radius: 0;
+  border: 0;
+
+  -webkit-box-shadow: 0 4px 10px 0 rgba(38, 50, 56, 0.6);
+  -moz-box-shadow: 0 4px 10px 0 rgba(38, 50, 56, 0.6);
+  box-shadow: 0 4px 10px 0 rgba(38, 50, 56, 0.6);
+
+  .panel-heading {
+    height: 64px;
+    padding: 16px;
+    border-radius: 0;
+    background-color: @color-3;
+    color: #fff;
+
+    .deb-component-logo {
+      display: inline-block;
+      width: 32px;
+      content: @icon-logo;
+    }
+    .panel-title {
+      display: inline-block;
+      line-height: 32px;
+      text-transform: uppercase;
+      vertical-align: middle;
+      margin: 0 12px;
+    }
+  }
+  .panel-body {
+    padding: 24px 24px 27px;
+  }
+  form {
+    width: 265px;
+    margin: 0 auto;
+
+    .form-group {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-top: 24px;
+        margin-bottom: 17px;
+        text-align: center;
+      }
+    }
+    .deb-btn {
+      width: 128px;
+    }
+  }
+  .hint-wrapper {
+    text-align: center;
+  }
+}

@@ -1,0 +1,45 @@
+
+.deb-side-nav {
+  position: fixed;
+  width: 64px;
+  height: 100%;
+  background-color: @color-2;
+
+  .deb-brand-icon {
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+
+    .deb-component-logo {
+      content: @icon-logo;
+    }
+  }
+  .deb-items,
+  .deb-bottom-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 64px;
+
+    li {
+      height: 48px;
+      color: @color-3;
+      line-height: 48px;
+      text-align: center;
+      cursor: pointer;
+
+      &.active {
+        background-color: @color-3;
+        color: #fff;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .deb-bottom-items {
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0;
+  }
+}

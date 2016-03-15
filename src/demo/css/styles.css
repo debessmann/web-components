@@ -1,0 +1,148 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(../img/deb-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+button.btn:active,
+button.btn.active {
+    outline: none;
+    box-shadow: none;
+}
+
+button.btn:active:focus,
+button.btn.active:focus {
+    outline: none;
+}
+
+button.btn:focus {
+    outline: none;
+}
+
+.theme-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+    top: 100px;
+}
+
+.theme-menu > li {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.theme-menu > li.deb-fd {
+    background-color: #1976d3;
+    color: #fff;
+}
+
+.theme-menu > li.deb-fd.active:hover,
+.theme-menu > li.deb-fd:hover {
+    background-color: #0e47a1;
+}
+
+.theme-menu > li.deb-fd.active {
+    background-color: #1463bf;
+    color: #fff;
+}
+
+.theme-menu > li.deb-ac {
+    background-color: #7AD0C7;
+    color: #fff;
+}
+
+.theme-menu > li.deb-ac.active:hover,
+.theme-menu > li.deb-ac:hover {
+    background-color: #00796b;
+}
+
+.theme-menu > li.deb-ac.active {
+    background-color: #4BB3A8;
+    color: #fff;
+}
+
+.theme-menu > li.deb-mc {
+    background-color: #9fa8da;
+    color: #fff;
+}
+
+.theme-menu > li.deb-mc.active:hover,
+.theme-menu > li.deb-mc:hover {
+    background-color: #3f51b5;
+}
+
+.theme-menu > li.deb-mc.active {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.container {
+    background-color: #f0f3f5;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+
+.content > div + div {
+    margin-top: 8px;
+}
+
+.show-code {
+    margin: 16px 8px;
+}
+
+.show-code span.link {
+    color: #337ab7;
+    cursor: pointer;
+}
+
+.show-code span.link:hover {
+    text-decoration: underline;
+}
+
+.show-code span.icon {
+    margin-left: 6px;
+}
+
+.code {
+    display: none;
+}
+
+.CodeMirror {
+    border: 1px solid #b0bec5;
+    height: auto;
+}
+
+.CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+/* Components customization */
+
+#example-popup .deb-popup {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+#example-popup .deb-popup + .deb-popup {
+    margin-left: 16px;
+}
+
+#example-links .deb-link-alt {
+    background-color: #fff;
+}
+
+#example-vertical-nav .deb-side-nav {
+    position: relative;
+    height: 320px;
+}

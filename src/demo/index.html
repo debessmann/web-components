@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debessmann components</title>
+
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="css/debessmann-fd.css" id="style-fd">
+    <link rel="stylesheet" type="text/css" href="css/debessmann-ac.css" id="style-ac">
+    <link rel="stylesheet" type="text/css" href="css/debessmann-mc.css" id="style-mc">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../bower_components/vkbeautify/vkbeautify.js"></script>
+    <script src="../../bower_components/codemirror/lib/codemirror.js"></script>
+    <script src="../../bower_components/codemirror/mode/xml/xml.js"></script>
+    <script src="../../bower_components/codemirror/mode/javascript/javascript.js"></script>
+    <script src="../../bower_components/codemirror/mode/css/css.js"></script>
+    <script src="../../bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<ul class="theme-menu">
+    <li class="deb-fd js-switch-fd active"><img src="img/ico-flow-designer.png"></li>
+    <li class="deb-ac js-switch-ac"><img src="img/ico-admin-console.png"></li>
+    <li class="deb-mc js-switch-mc"><img src="img/ico-monitoring-console.png"></li>
+</ul>
+
+<div class="container">
+
+    <h1>Debessmann components</h1>
+
+    <div id="example-inputs" class="example">
+        <h3>Forms</h3>
+        <div class="content">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Label</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Placeholder">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Label</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Placeholder" value="Content">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-tabs" class="example">
+        <h3>Tabs</h3>
+        <div class="content">
+            <ul class="deb-tabs">
+                <li class="active">Home</li>
+                <li>Messages</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-vertical-nav" class="example">
+        <h3>Vertical navigation</h3>
+        <div class="content">
+            <div class="deb-side-nav">
+                <div class="deb-brand-icon">
+                    <img class="deb-component-logo">
+                </div>
+                <ul class="deb-items">
+                    <li class="active">Home</li>
+                    <li>Mail</li>
+                    <li>Users</li>
+                </ul>
+                <ul class="deb-bottom-items">
+                    <li>Logout</li>
+                </ul>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-cardfile" class="example">
+        <h3>Cardfile</h3>
+        <div class="content">
+            <div class="panel-group deb-cardfile">
+                <div class="panel panel-default collapsed">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Lorem</h4>
+                        <div class="panel-subtitle">ipsum dolor sit amet</div>
+                    </div>
+                    <div class="toggleable-part">
+                        <div class="panel-body">Content</div>
+                        <div class="panel-footer">Footer</div>
+                    </div>
+                </div>
+                <div class="panel panel-default collapsed">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Mauris</h4>
+                        <div class="panel-subtitle">vel accumsan nunc</div>
+                    </div>
+                    <div class="toggleable-part">
+                        <div class="panel-body">Content</div>
+                        <div class="panel-footer">Footer</div>
+                    </div>
+                </div>
+                <div class="panel panel-default collapsed">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Nullam</h4>
+                        <div class="panel-subtitle">sed gravida velit</div>
+                    </div>
+                    <div class="toggleable-part">
+                        <div class="panel-body">Content</div>
+                        <div class="panel-footer">Footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-links" class="example">
+        <h3>Links</h3>
+        <div class="content">
+            <span class="deb-link">Link</span>
+            <span class="deb-link deb-link-alt">Alt link</span>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-buttons" class="example">
+        <h3>Buttons</h3>
+        <div class="content">
+            <div>
+                <button class="btn deb-btn deb-btn-primary">Primary</button>
+                <button class="btn deb-btn deb-btn-primary active">Active</button>
+                <button class="btn deb-btn deb-btn-primary" disabled>Disabled</button>
+            </div>
+            <div>
+                <button class="btn deb-btn deb-btn-primary-inv">Inverse</button>
+                <button class="btn deb-btn deb-btn-primary-inv active">Active</button>
+                <button class="btn deb-btn deb-btn-primary-inv" disabled>Disabled</button>
+            </div>
+            <div>
+                <button class="btn deb-btn deb-btn-secondary">Secondary</button>
+                <button class="btn deb-btn deb-btn-secondary active">Active</button>
+                <button class="btn deb-btn deb-btn-secondary" disabled>Disabled</button>
+            </div>
+            <div>
+                <button class="btn deb-btn deb-btn-secondary-inv">Inverse</button>
+                <button class="btn deb-btn deb-btn-secondary-inv active">Active</button>
+                <button class="btn deb-btn deb-btn-secondary-inv" disabled>Disabled</button>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-pict-buttons" class="example">
+        <h3>Pictogram buttons</h3>
+        <div class="content">
+            <div>
+                <button class="btn deb-btn deb-btn-pict deb-btn-primary"><span class="fa fa-cogs"></span></button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-primary active"><span class="fa fa-cogs"></span>
+                </button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-primary" disabled><span class="fa fa-cogs"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv"><span class="fa fa-cogs"></span></button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv active"><span class="fa fa-cogs"></span>
+                </button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv" disabled><span class="fa fa-cogs"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn deb-btn deb-btn-pict deb-btn-secondary"><span class="fa fa-trash"></span></button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-secondary active"><span class="fa fa-trash"></span>
+                </button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-secondary" disabled><span class="fa fa-trash"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn deb-btn deb-btn-pict deb-btn-secondary-inv"><span class="fa fa-trash"></span>
+                </button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-secondary-inv active"><span class="fa fa-trash"></span>
+                </button>
+                <button class="btn deb-btn deb-btn-pict deb-btn-secondary-inv" disabled><span
+                        class="fa fa-trash"></span></button>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-pagination" class="example">
+        <h3>Pagination</h3>
+        <div class="content">
+            <div class="deb-pagination">
+                <div class="nav-controls">
+                    <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv" title="First page">
+                        <span class="fa fa-angle-double-left"></span>
+                    </button>
+                    <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv" title="Previous page">
+                        <span class="fa fa-angle-left"></span>
+                    </button>
+                    <select class="form-control" title="Go to page"></select>
+                    <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv" title="Next page">
+                        <span class="fa fa-angle-right"></span>
+                    </button>
+                    <button class="btn deb-btn deb-btn-pict deb-btn-primary-inv" title="Last page">
+                        <span class="fa fa-angle-double-right"></span>
+                    </button>
+                </div>
+                <div class="page-length-control">
+                    <label class="control-label">Items per page:</label>
+                    <select class="form-control" title="Records per page">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+    <div id="example-popup" class="example">
+        <h3>Notification popup</h3>
+        <div class="content">
+            <div class="deb-popup deb-popup-notification">
+                <div class="modal-header">
+                    <button type="button" class="close">&times;</button>
+                    <h4 class="modal-title"><span class="popup-icon"></span>Notification</h4>
+                </div>
+                <div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+
+            <div class="deb-popup deb-popup-success">
+                <div class="modal-header">
+                    <button type="button" class="close">&times;</button>
+                    <h4 class="modal-title"><span class="popup-icon"></span>Success</h4>
+                </div>
+                <div class="modal-body">Aliquam aliquam massa eu orci tempor, scelerisque tristique lectus pharetra.
+                </div>
+            </div>
+
+            <div class="deb-popup deb-popup-warning">
+                <div class="modal-header">
+                    <button type="button" class="close">&times;</button>
+                    <h4 class="modal-title modal-error"><span class="popup-icon"></span>Warning</h4>
+                </div>
+                <div class="modal-body">Ut tortor leo, laoreet eu nunc a, semper euismod elit.</div>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+
+
+    <div id="example-login" class="example">
+        <h3>Login form</h3>
+        <div class="content">
+            <div class="panel panel-default deb-login-panel">
+                <div class="panel-heading">
+                    <img class="deb-component-logo">
+                    <h4 class="panel-title">Component name</h4>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="login" title="Login" placeholder="Login">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" title="Password"
+                                   placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn deb-btn deb-btn-secondary active">Login</button>
+                        </div>
+                    </form>
+                    <div class="hint-wrapper">
+                        <span class="deb-link deb-link-alt">Forgot password?</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-code">
+            <span class="link js-show-code">
+                Show code<span class="icon fa fa-chevron-circle-down"></span>
+            </span>
+        </div>
+        <div class="code"></div>
+    </div>
+</div>
+
+</body>
+</html>
