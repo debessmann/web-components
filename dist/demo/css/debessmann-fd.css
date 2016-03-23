@@ -288,13 +288,8 @@ ul.deb-tabs > li:not(.active):hover {
   background-color: #617d8b;
   color: #fff;
 }
-.deb-btn.deb-btn-secondary:hover:focus,
-.deb-btn.deb-btn-secondary:active:focus,
-.deb-btn.deb-btn-secondary.active:focus {
-  color: #fff;
-}
 .deb-btn.deb-btn-secondary:focus {
-  color: #617d8b;
+  color: #fff;
 }
 .deb-btn.deb-btn-secondary.disabled:hover,
 .deb-btn.deb-btn-secondary[disabled]:hover {
@@ -464,5 +459,39 @@ ul.deb-tabs > li:not(.active):hover {
 }
 .deb-login-panel .hint-wrapper {
   text-align: center;
+}
+.modal-backdrop.in {
+  opacity: 0.25;
+}
+.bootbox {
+  /*.bootbox .form-button-wrapper {
+    padding-top: 4px;
+  }*/
+}
+.bootbox .modal-content {
+  border: 0;
+  border-radius: 0;
+}
+.bootbox .modal-content .modal-header {
+  padding: 0 24px;
+  border-bottom: 1px solid #cfd8dc;
+}
+.bootbox .modal-content .modal-header .modal-title {
+  color: #0e47a1;
+  line-height: 56px;
+}
+.bootbox .modal-content .modal-header .bootbox-close-button {
+  font-size: 28px;
+  margin-top: 14px;
+  outline: none;
+}
+.bootbox .modal-content .modal-body {
+  padding: 15px 24px;
+}
+.bootbox .modal-content .modal-body div.form-group:last-of-type {
+  margin-bottom: 0;
+}
+.bootbox .modal-content .modal-footer {
+  border-top: 1px solid #cfd8dc;
 }
 /* debessmann:end */

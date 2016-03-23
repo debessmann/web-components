@@ -1,0 +1,42 @@
+
+.modal-backdrop.in {
+  opacity: 0.25;
+}
+
+.bootbox {
+  .modal-content {
+    border: 0;
+    border-radius: 0;
+
+    .modal-header {
+      padding: 0 24px;
+      border-bottom: 1px solid @col-form-control-border;
+
+      .modal-title {
+        color: @color-3;
+        line-height: 56px;
+      }
+      .bootbox-close-button {
+        font-size: 28px;
+        margin-top: 14px;
+        outline: none;
+      }
+    }
+    .modal-body {
+      padding: 15px 24px;
+      //color: #263238;
+
+      div.form-group:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .modal-footer {
+      border-top: 1px solid @col-form-control-border;
+    }
+  }
+
+  // TODO uncomment if usage found
+  /*.bootbox .form-button-wrapper {
+    padding-top: 4px;
+  }*/
+}
