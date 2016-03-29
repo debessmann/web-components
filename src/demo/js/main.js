@@ -71,6 +71,16 @@ $(document).ready(function () {
     });
 
     examples.push($exampleTabs);
+    
+    var $exampleTabsUnderscore = $("#example-tabs-underscore");
+    $exampleTabsUnderscore.find("li").click(function (e) {
+        e.stopPropagation();
+        var $target = $(e.target);
+        $target.closest(".deb-tabs").find(".active").removeClass("active");
+        $target.closest("li").addClass("active");
+    });
+
+    examples.push($exampleTabsUnderscore);
 
     var $exampleVerticalNav = $("#example-vertical-nav");
     $exampleVerticalNav.find(".deb-items").find("li").click(function (e) {

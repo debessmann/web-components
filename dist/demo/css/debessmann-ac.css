@@ -79,12 +79,12 @@ ul.deb-tabs > li {
   line-height: 44px;
   text-align: center;
   font-size: 14px;
+  cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
 }
 ul.deb-tabs > li.active {
   background-color: #fff;
@@ -93,6 +93,22 @@ ul.deb-tabs > li.active {
 ul.deb-tabs > li:not(.active):hover {
   color: #fff;
   background-color: #00796b;
+}
+ul.deb-tabs.deb-tabs-underscored {
+  background-color: #fff;
+}
+ul.deb-tabs.deb-tabs-underscored > li {
+  background-color: #fff;
+  color: #00796b;
+  font-weight: 500;
+}
+ul.deb-tabs.deb-tabs-underscored > li:hover,
+ul.deb-tabs.deb-tabs-underscored > li.active {
+  border-bottom: 4px solid #00796b;
+}
+ul.deb-tabs.deb-tabs-underscored > li:not(.active):hover {
+  background-color: #fff;
+  color: #00796b;
 }
 .deb-side-nav {
   position: fixed;
@@ -251,7 +267,7 @@ ul.deb-tabs > li:not(.active):hover {
   border-color: #7AD0C7;
 }
 .deb-btn.deb-btn-primary-inv {
-  background-color: #fff;
+  background-color: transparent;
   border-color: #4BB3A8;
   color: #00796b;
 }
@@ -272,7 +288,7 @@ ul.deb-tabs > li:not(.active):hover {
 }
 .deb-btn.deb-btn-primary-inv.disabled,
 .deb-btn.deb-btn-primary-inv[disabled] {
-  background-color: #fff;
+  background-color: transparent;
   border-color: #7AD0C7;
   color: #7AD0C7;
 }
@@ -297,7 +313,7 @@ ul.deb-tabs > li:not(.active):hover {
   border-color: #90a4ae;
 }
 .deb-btn.deb-btn-secondary-inv {
-  background-color: #fff;
+  background-color: transparent;
   border-color: #90a4ae;
   color: #455a64;
 }
@@ -318,7 +334,7 @@ ul.deb-tabs > li:not(.active):hover {
 }
 .deb-btn.deb-btn-secondary-inv.disabled,
 .deb-btn.deb-btn-secondary-inv[disabled] {
-  background-color: #fff;
+  background-color: transparent;
   border-color: #bcc8ce;
   color: #bcc8ce;
 }

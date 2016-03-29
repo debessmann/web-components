@@ -4,38 +4,52 @@ ul.deb-tabs {
   margin: 0;
   padding: 0;
   background-color: @color-1;
+
+  > li {
+    display: inline-block;
+    min-width: 82px;
+    height: 44px;
+    padding: 0 12px;
+    background-color: @color-2;
+    color: white;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &.active {
+      background-color: #fff;
+      color: @color-3;
+    }
+    &:not(.active):hover {
+      color: #fff;
+      background-color: @color-3;
+    }
+  }
 }
 
-ul.deb-tabs > li {
-  display: inline-block;
-
-  min-width: 82px;
-  height: 44px;
-  padding: 0 12px;
-
-  background-color: @color-2;
-  color: white;
-
-  line-height: 44px;
-  text-align: center;
-
-  font-size: 14px;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  cursor: pointer;
-}
-
-ul.deb-tabs > li.active {
+ul.deb-tabs.deb-tabs-underscored {
   background-color: #fff;
-  color: @color-3;
-}
 
-ul.deb-tabs > li:not(.active):hover {
-  color: #fff;
-  background-color: @color-3;
+  > li {
+    background-color: #fff;
+    color: @color-3;
+    font-weight: 500;
+
+    &:hover,
+    &.active {
+      border-bottom: 4px solid @color-3;
+    }
+
+    &:not(.active):hover {
+      background-color: #fff;
+      color: @color-3;
+    }
+  }
 }
