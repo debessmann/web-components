@@ -251,7 +251,7 @@ ul.deb-tabs > li:not(.active):hover {
   border-color: #7AD0C7;
 }
 .deb-btn.deb-btn-primary-inv {
-  background-color: transparent;
+  background-color: #fff;
   border-color: #4BB3A8;
   color: #00796b;
 }
@@ -272,7 +272,7 @@ ul.deb-tabs > li:not(.active):hover {
 }
 .deb-btn.deb-btn-primary-inv.disabled,
 .deb-btn.deb-btn-primary-inv[disabled] {
-  background-color: transparent;
+  background-color: #fff;
   border-color: #7AD0C7;
   color: #7AD0C7;
 }
@@ -297,7 +297,7 @@ ul.deb-tabs > li:not(.active):hover {
   border-color: #90a4ae;
 }
 .deb-btn.deb-btn-secondary-inv {
-  background-color: transparent;
+  background-color: #fff;
   border-color: #90a4ae;
   color: #455a64;
 }
@@ -318,7 +318,7 @@ ul.deb-tabs > li:not(.active):hover {
 }
 .deb-btn.deb-btn-secondary-inv.disabled,
 .deb-btn.deb-btn-secondary-inv[disabled] {
-  background-color: transparent;
+  background-color: #fff;
   border-color: #bcc8ce;
   color: #bcc8ce;
 }
