@@ -35,33 +35,42 @@ label.control-label {
   font-weight: 400;
 }
 input.form-control,
-select.form-control {
+select.form-control,
+textarea.form-control {
   color: #263238;
   border-color: #cfd8dc;
 }
 input.form-control:focus,
-select.form-control:focus {
+select.form-control:focus,
+textarea.form-control:focus {
   box-shadow: none;
   outline: none;
   border-color: #cfd8dc;
 }
 input.form-control::-webkit-input-placeholder,
-select.form-control::-webkit-input-placeholder {
+select.form-control::-webkit-input-placeholder,
+textarea.form-control::-webkit-input-placeholder {
   color: #a8adaf !important;
 }
 input.form-control::-moz-placeholder,
-select.form-control::-moz-placeholder {
+select.form-control::-moz-placeholder,
+textarea.form-control::-moz-placeholder {
   /* Firefox 19+ */
   color: #a8adaf !important;
 }
 input.form-control:-moz-placeholder,
-select.form-control:-moz-placeholder {
+select.form-control:-moz-placeholder,
+textarea.form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #a8adaf !important;
 }
 input.form-control:-ms-input-placeholder,
-select.form-control:-ms-input-placeholder {
+select.form-control:-ms-input-placeholder,
+textarea.form-control:-ms-input-placeholder {
   color: #a8adaf !important;
+}
+textarea {
+  resize: none;
 }
 ul.deb-tabs {
   font-size: 0;
